@@ -1,22 +1,28 @@
-import Image from "next/image";
-import icon1 from "public/img/icon1.jpg";
+import Image from 'next/image'
+
+import icon from '/public/img/icon/icon3.jpg'
 
 const TopContent = () => {
   return (
-    <div>
-      <div>
-        <Image src={icon1} alt="icon" />
-      </div>
-      <h1>けい</h1>
-      <div>
-        <p>こんにちは！ここにテキストが入ります</p>
-        <p></p>
-        <p>
-          SwitchとPCのゲームをたくさんやっているので、共通のゲームがあれば声かけてください！
-        </p>
+    <div className="mb-8 mt-10">
+      <Image
+        src={icon}
+        alt="icon"
+        className="mx-auto h-[120px] w-auto rounded-full"
+      />
+      <div className="text-center">
+        <h1 className="pb-4 pt-3 text-2xl font-bold">けい</h1>
+        <div className="rounded-xl bg-[#F6F6F6] px-3 py-2 text-sm font-medium drop-shadow">
+          <p>
+            こんにちは！ここにテキストが入ります
+            <br />
+            <br />
+            SwitchとPCのゲームをたくさんやっているので、共通のゲームがあれば声かけてください！
+          </p>
+        </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default TopContent;
+export default TopContent
