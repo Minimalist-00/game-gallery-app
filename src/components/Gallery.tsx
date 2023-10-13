@@ -5,7 +5,7 @@ const Gallery = () => {
 
   return (
     <div>
-      <div className="grid grid-cols-2 gap-6">
+      <div className="grid grid-cols-2 gap-5">
         {cards.map((card, index) => (
           <div key={index} className="relative">
             <img src={card.img} alt={card.title} className="w-full object-cover rounded-2xl shadow-md" />
