@@ -8,7 +8,7 @@ const Gallery = () => {
       <div className="grid grid-cols-2 gap-6">
         {cards.map((card, index) => (
           <div key={index} className="relative">
-            <img src={card.img} alt={card.title} className="w-full object-cover rounded-2xl shadow-md opacity-90" />
+            <img src={card.img} alt={card.title} className="w-full object-cover rounded-2xl shadow-md" />
             <div className="pl-3">
               <div className="absolute bottom-9 bg-white bg-opacity-80 rounded-md py-1 px-[6px]">
                 <p className="text-xs font-semibold">{card.title}</p>
@@ -19,7 +19,7 @@ const Gallery = () => {
                     const platformTag = tags.find(tag => tag.g_platform === platform);
                     if (platformTag) {
                       return (
-                        <li key={platformIndex} className={`rounded-xl py-[3px] px-2 ${platformTag.color}`}>
+                        <li key={platformIndex} className={`rounded-xl py-[3px] px-2 ${platformTag.color} bg-opacity-90`}>
                           <p className="text-xs font-medium">
                             {platform}
                           </p>
