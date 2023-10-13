@@ -8,7 +8,7 @@ const Gallery = () => {
       <div className="grid grid-cols-2 gap-5">
         {cards.map((card, index) => (
           <div key={index} className="relative">
-            <img src={card.img} alt={card.title} className="w-full object-cover rounded-2xl shadow-md" />
+            <img src={card.img} alt={card.title} className="w-full object-cover rounded-2xl shadow-md pointer-events-none" />
             <div className="pl-3">
               <div className="absolute bottom-9 bg-white bg-opacity-80 rounded-md py-1 px-[6px]">
                 <p className="text-xs font-semibold">{card.title}</p>
