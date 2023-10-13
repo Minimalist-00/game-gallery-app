@@ -19,7 +19,7 @@ const Gallery = () => {
                     const platformTag = tags.find(tag => tag.g_platform === platform);
                     if (platformTag) {
                       return (
-                        <li key={platformIndex} className={`rounded-xl py-[3px] px-2 ${platformTag.color} bg-opacity-90`}>
+                        <li key={platformIndex} className={`rounded-xl py-[3px] px-2 ${platformTag.color}`}>
                           <p className="text-xs font-medium">
                             {platform}
                           </p>
