@@ -1,6 +1,5 @@
 import Image from 'next/image'
 
-
 import icon from '/public/img/icon/icon3.jpg'
 
 const TopContent = () => {
