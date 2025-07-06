@@ -1,10 +1,11 @@
 import Image from 'next/image'
 import Link from 'next/link'
+
 import twitter_logo from '/public/img/svg/Twitter.svg'
 
 const Footer = () => {
   return (
-    <div className="pt-14 pb-6 text-center mx-auto">
+    <div className="mx-auto pb-6 pt-14 text-center">
       <Link href="https://twitter.com/donotpeak_00">
         <Image src={twitter_logo} alt="twitter logo" className="mx-auto pb-2" />
       </Link>
